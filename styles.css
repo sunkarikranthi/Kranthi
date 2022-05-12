@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+body
+{
+    background: linear-gradient(to right, #660c75, #8acaff);
+    /* background-image: url(images/aishu.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:contain; */
+}
+
+nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display:flex;
+    align-items: center;
+}
+
+.nav_link
+{
+    flex: 1;
+    text-align: right;
+}
+.nav_link ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.nav_link ul li a
+{
+    border-radius: 6px;
+    padding: 3px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#submit {
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.nav_link ul li a:hover
+{
+    background: linear-gradient(to right, #ffff, rgb(83, 81, 81));
+    opacity: 50%;
+    font-weight: bold;
+    color: #0b0166;
+}
+/* button{
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+} */
+
+.myname 
+{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.myname a
+{
+    color: white;
+    text-decoration: none;
+}
+.myPic
+{
+    padding-left: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+.contact
+{
+    margin-top: 50px;
+    display: inline-flexbox;
+}
+
+.contact ul
+{
+    display: flex;
+}
+
+.contact ul li
+{
+    list-style: none;
+    margin: 10px;
+    
+}
+
+.contact ul li a
+{
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact ul li a:hover
+{
+    opacity: 50%;
+}
+
+.cImg
+{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.cImg:hover
+{
+    opacity: 50%;
+}
+
+.inputDiv
+{
+    color: aquamarine;
+    width: 100px;
+    display: grid;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.inputDiv input
+{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gend
+{
+    display: inline-block;
+}
+
+.checkb
+{
+    align-items: center;
+    display: inline-block;
+}
+
+.div-web {
+    align-items: center;
+}
+
+.div-web div {
+    margin: 20px;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(219, 219, 243), rgb(207, 114, 253) 50%, #ffffff);
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.div-web div:hover {
+    background: linear-gradient(180deg, rgb(134, 139, 219), rgb(56, 207, 218));
+}
+
+#linearGrad div {
+    margin: 20px;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    border-color: #660c75;
+    border-radius: 10px;
+    background: radial-gradient(blue 20%,red 30%,rgb(106, 25, 143) 50%, #ffffff);
+}
