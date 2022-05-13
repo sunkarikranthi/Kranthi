@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Brush Script MT", cursive;
 }
 
 a
@@ -12,6 +12,7 @@ a
 
 body
 {
+    text-align: center;
     background: linear-gradient(to right, #660c75, #8acaff);
     /* background-image: url(images/aishu.jpg);
     background-repeat: no-repeat;
@@ -19,11 +20,15 @@ body
     background-size:contain; */
 }
 
+footer
+{
+    text-align: end;
+}
+
 nav {
-    width: 80%;
+    border-bottom: 5px double #ffffff;
     position: sticky;
-    margin: 20px auto;
-    z-index: 1;
+    margin-bottom: 20px;
     display:flex;
     align-items: center;
 }
@@ -46,6 +51,8 @@ nav {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    transition: 800ms ease-in-out;
+
 }
 
 #submit {
@@ -57,6 +64,7 @@ nav {
 
 .nav_link ul li a:hover
 {
+    font-family: "Brush Script MT", cursive;
     background: linear-gradient(to right, #ffff, rgb(83, 81, 81));
     opacity: 50%;
     font-weight: bold;
@@ -90,7 +98,8 @@ nav {
 .contact
 {
     margin-top: 50px;
-    display: inline-flexbox;
+    text-align: center;
+    display: inline-flex;
 }
 
 .contact ul
@@ -101,8 +110,7 @@ nav {
 .contact ul li
 {
     list-style: none;
-    margin: 10px;
-    
+    margin: 10px;    
 }
 
 .contact ul li a
@@ -159,6 +167,8 @@ nav {
 
 .div-web {
     align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .div-web div {
@@ -166,18 +176,32 @@ nav {
     align-items: center;
     background: linear-gradient(45deg, rgb(219, 219, 243), rgb(207, 114, 253) 50%, #ffffff);
     width: 250px;
-    height: 200px;
-    display: inline-block;
-    border-radius: 10px;
+    height: 250px;
+    border-radius: 33px;
+    transition: 800ms ease-in-out;
+    transform:translate(100px, 100px)
+}
+
+.div-web div img {
+    padding: 12px;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 33px;
 }
 
 .div-web div:hover {
     background: linear-gradient(180deg, rgb(134, 139, 219), rgb(56, 207, 218));
+    /* flex-grow: 1; */
+    align-self: center;
+    padding: 30px;
+    transform: translate(30px, -30px);
 }
+
 
 #linearGrad div {
     margin: 20px;
-    align-items: center;
+    text-align: center;
     width: 250px;
     height: 200px;
     display: inline-block;
